@@ -19,15 +19,18 @@ const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    await fetch('https://api.web3forms.com/submit', {
+    const data = new FormData(e.currentTarget);
+    data.append('access_key', import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);
+
+    const response = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        access_key: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY,
-        ...formData,
-      }),
+      body: data,
     });
-    alert('Thank you for your message. We will be in touch shortly.');
+
+    const result = await response.json();
+    if (result.success) {
+      alert('Thank you for your message. We will be in touch shortly.');
+    }
   };
 
   return (
