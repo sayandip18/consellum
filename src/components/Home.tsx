@@ -1,8 +1,8 @@
-import './Home.css';
+import "./Home.css";
 
 const Home = () => {
   const scrollTo = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -11,20 +11,26 @@ const Home = () => {
       <div className="home__overlay" />
 
       <div className="home__content">
-        <span className="home__tag">Food Technology R&amp;D Consultancy</span>
+        <span className="home__tag">Food Tech Compliance and Consultancy</span>
         <h1 className="home__title">
-          Shaping the <em>Future of Food</em> Through Science
+          Your End-to-End <em>Business Compliance</em> Partner
         </h1>
         <p className="home__subtitle">
-          Consellum bridges the gap between cutting-edge food science and
-          market-ready innovation — helping food companies create healthier,
-          more sustainable, and better-tasting products.
+          From BIS/ISI certifications to FSSAI licensing, trademarks, and
+          product development — Consellum handles the regulatory complexity so
+          you can focus on growing your business.
         </p>
         <div className="home__actions">
-          <button className="btn btn--primary" onClick={() => scrollTo('services')}>
+          <button
+            className="btn btn--primary"
+            onClick={() => scrollTo("services")}
+          >
             Explore Our Services
           </button>
-          <button className="btn btn--outline" onClick={() => scrollTo('contact')}>
+          <button
+            className="btn btn--outline"
+            onClick={() => scrollTo("contact")}
+          >
             Get in Touch
           </button>
         </div>
