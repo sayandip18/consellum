@@ -2,19 +2,19 @@ import './About.css';
 
 const pillars = [
   {
-    icon: '🔬',
-    title: 'Science-Led Innovation',
-    desc: 'Every recommendation is grounded in peer-reviewed research and validated lab data.',
+    icon: '🏢',
+    title: 'Enterprise & Manufacturer Partners',
+    desc: 'Delivering structured, compliant solutions that support efficient market entry and regulatory assurance.',
   },
   {
-    icon: '🌿',
-    title: 'Sustainability First',
-    desc: 'We design solutions that minimize environmental impact without compromising performance.',
+    icon: '📈',
+    title: 'Investor-Ready Growth',
+    desc: 'Commercially viable strategies aligned with long-term business growth and scalable operations.',
   },
   {
     icon: '🤝',
-    title: 'Collaborative Approach',
-    desc: 'We embed with your team, acting as an extension of your internal R&D capabilities.',
+    title: 'End-to-End Support',
+    desc: 'Your personal Business Consultant across every stage of your business journey.',
   },
 ];
 
@@ -24,19 +24,14 @@ const About = () => {
       <div className="about__inner">
         <div className="about__text">
           <span className="section-tag">Who We Are</span>
-          <h2 className="section-title">Where Science Meets Culinary Excellence</h2>
+          <h2 className="section-title">Your Personal Business Consultant</h2>
           <p className="section-subtitle">
-            Founded by a team of food scientists, flavor chemists, and process engineers,
-            Consellum has spent over 15 years at the forefront of food technology innovation.
+            We are Team Consellum, providing end to end support for all of your business problems.
           </p>
           <p className="about__body">
-            We work with leading food and beverage companies, startups, and ingredient manufacturers
-            to tackle their most complex formulation challenges — from clean-label reformulation and
-            protein fortification to novel fermentation processes and alt-protein development.
-          </p>
-          <p className="about__body">
-            Our multidisciplinary team combines deep scientific expertise with a pragmatic,
-            commercial mindset to deliver solutions that work in the lab <em>and</em> on the shelf.
+            We partner with enterprises, manufacturers, and investors to deliver structured, compliant,
+            and commercially viable solutions that support efficient market entry, regulatory assurance,
+            and long-term business growth.
           </p>
 
           <div className="about__pillars">

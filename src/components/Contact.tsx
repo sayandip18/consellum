@@ -140,12 +140,12 @@ const Contact = () => {
                 onChange={handleChange}
               >
                 <option value="">Select a service...</option>
-                <option value="ingredient">Ingredient Innovation</option>
-                <option value="process">Process Optimisation</option>
-                <option value="product">Product Development</option>
-                <option value="sensory">Sensory Science</option>
-                <option value="safety">Food Safety &amp; Compliance</option>
-                <option value="sustainable">Sustainable Formulation</option>
+                <option value="bis-isi">BIS / ISI Certification</option>
+                <option value="fssai">FSSAI License / Registration</option>
+                <option value="trademark">Trademark</option>
+                <option value="npd">New Food Product Development</option>
+                <option value="iso">ISO Certification</option>
+                <option value="misc">Misc. Services</option>
                 <option value="other">Other / General Enquiry</option>
               </select>
             </div>
