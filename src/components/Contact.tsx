@@ -1,18 +1,20 @@
-import { useState } from 'react';
-import './Contact.css';
+import { useState } from "react";
+import "./Contact.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    company: '',
-    email: '',
-    service: '',
-    message: '',
+    firstName: "",
+    lastName: "",
+    company: "",
+    email: "",
+    service: "",
+    message: "",
   });
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >,
   ) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
@@ -20,16 +22,16 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
-    data.append('access_key', import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);
+    data.append("access_key", import.meta.env.VITE_WEB3FORMS_ACCESS_KEY);
 
-    const response = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
       body: data,
     });
 
     const result = await response.json();
     if (result.success) {
-      alert('Thank you for your message. We will be in touch shortly.');
+      alert("Thank you for your message. We will be in touch shortly.");
     }
   };
 
@@ -40,8 +42,9 @@ const Contact = () => {
           <span className="section-tag">Let's Talk</span>
           <h2 className="section-title">Get in Touch</h2>
           <p className="contact__info-body">
-            Whether you have a specific R&amp;D challenge, are exploring a new product concept,
-            or simply want to understand how we can support your team — we'd love to hear from you.
+            Whether you have a specific R&amp;D challenge, are exploring a new
+            product concept, or simply want to understand how we can support
+            your team — we'd love to hear from you.
           </p>
 
           <div className="contact__details">
@@ -50,7 +53,9 @@ const Contact = () => {
               <div>
                 <span className="contact__detail-label">Office</span>
                 <span className="contact__detail-value">
-                  12 Innovation Quarter, Clerkenwell<br />London, EC1V 9JR, United Kingdom
+                  5C/15, Mohini Villa
+                  <br />
+                  Kolkata - 700052, West Bengal
                 </span>
               </div>
             </div>
@@ -58,14 +63,16 @@ const Contact = () => {
               <div className="contact__detail-icon">✉️</div>
               <div>
                 <span className="contact__detail-label">Email</span>
-                <span className="contact__detail-value">hello@consellum.com</span>
+                <span className="contact__detail-value">
+                  hello@consellum.com
+                </span>
               </div>
             </div>
             <div className="contact__detail">
               <div className="contact__detail-icon">📞</div>
               <div>
                 <span className="contact__detail-label">Phone</span>
-                <span className="contact__detail-value">+44 (0)20 7946 0958</span>
+                <span className="contact__detail-value">+91 9038652740</span>
               </div>
             </div>
           </div>
@@ -75,7 +82,9 @@ const Contact = () => {
           <form className="contact__form" onSubmit={handleSubmit}>
             <div className="form__row">
               <div className="form__group">
-                <label className="form__label" htmlFor="firstName">First Name</label>
+                <label className="form__label" htmlFor="firstName">
+                  First Name
+                </label>
                 <input
                   id="firstName"
                   name="firstName"
@@ -88,7 +97,9 @@ const Contact = () => {
                 />
               </div>
               <div className="form__group">
-                <label className="form__label" htmlFor="lastName">Last Name</label>
+                <label className="form__label" htmlFor="lastName">
+                  Last Name
+                </label>
                 <input
                   id="lastName"
                   name="lastName"
@@ -104,7 +115,9 @@ const Contact = () => {
 
             <div className="form__row">
               <div className="form__group">
-                <label className="form__label" htmlFor="company">Company</label>
+                <label className="form__label" htmlFor="company">
+                  Company
+                </label>
                 <input
                   id="company"
                   name="company"
@@ -116,7 +129,9 @@ const Contact = () => {
                 />
               </div>
               <div className="form__group">
-                <label className="form__label" htmlFor="email">Email Address</label>
+                <label className="form__label" htmlFor="email">
+                  Email Address
+                </label>
                 <input
                   id="email"
                   name="email"
@@ -131,7 +146,9 @@ const Contact = () => {
             </div>
 
             <div className="form__group">
-              <label className="form__label" htmlFor="service">Service of Interest</label>
+              <label className="form__label" htmlFor="service">
+                Service of Interest
+              </label>
               <select
                 id="service"
                 name="service"
@@ -151,7 +168,9 @@ const Contact = () => {
             </div>
 
             <div className="form__group">
-              <label className="form__label" htmlFor="message">Message</label>
+              <label className="form__label" htmlFor="message">
+                Message
+              </label>
               <textarea
                 id="message"
                 name="message"
