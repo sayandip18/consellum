@@ -11,14 +11,13 @@ const Home = () => {
       <div className="home__overlay" />
 
       <div className="home__content">
-        <span className="home__tag">Food Tech Compliance and Consultancy</span>
         <h1 className="home__title">
-          Your End-to-End <em>Business Compliance</em> Partner
+          End-to-End <br /> <em>Techno-Legal Compliance</em> <br /> Partner for
+          Your Business
         </h1>
         <p className="home__subtitle">
-          From BIS/ISI certifications to FSSAI licensing, trademarks, and
-          product development — Consellum handles the regulatory complexity so
-          you can focus on growing your business.
+          One-stop solution for certification, licensing, and product
+          compliance.
         </p>
         <div className="home__actions">
           <button
@@ -38,16 +37,16 @@ const Home = () => {
 
       <div className="home__stats">
         <div className="home__stat">
-          <span className="home__stat-number">15+</span>
+          <span className="home__stat-number">5+</span>
           <span className="home__stat-label">Years Experience</span>
         </div>
         <div className="home__stat">
-          <span className="home__stat-number">200+</span>
+          <span className="home__stat-number">50+</span>
           <span className="home__stat-label">Projects Delivered</span>
         </div>
         <div className="home__stat">
           <span className="home__stat-number">60+</span>
-          <span className="home__stat-label">Global Clients</span>
+          <span className="home__stat-label">Clients</span>
         </div>
       </div>
 
