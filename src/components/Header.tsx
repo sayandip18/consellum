@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import './Header.css';
 import { SERVICES_LIST } from './servicesData';
 import { UPDATES_LIST } from './updatesData';
-import type { ServiceData } from './ServiceDetailPage';
 
 const ChevronIcon = () => (
   <svg
@@ -23,11 +23,10 @@ const ChevronIcon = () => (
   </svg>
 );
 
-interface HeaderProps {
-  onServiceSelect: (service: ServiceData) => void;
-}
-
-const Header = ({ onServiceSelect }: HeaderProps) => {
+const Header = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const isHome = location.pathname === '/';
   const [scrolled, setScrolled] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<'services' | 'updates' | null>(null);
   const servicesRef = useRef<HTMLDivElement>(null);
@@ -60,7 +59,7 @@ const Header = ({ onServiceSelect }: HeaderProps) => {
     setOpenDropdown((prev) => (prev === key ? null : key));
 
   return (
-    <header className={`header${scrolled ? ' header--scrolled' : ''}`}>
+    <header className={`header${scrolled || !isHome ? ' header--scrolled' : ''}`}>
       <div className="header__inner">
         <div className="header__logo">
           <span className="header__logo-mark">C</span>
@@ -107,7 +106,7 @@ const Header = ({ onServiceSelect }: HeaderProps) => {
                   role="menuitem"
                   onClick={() => {
                     setOpenDropdown(null);
-                    onServiceSelect(service);
+                    navigate(`/services/${service.id}`);
                   }}
                 >
                   {service.title}

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import "./App.css";
 import Header from "./components/Header";
 import Home from "./components/Home";
@@ -7,27 +7,26 @@ import Services from "./components/Services";
 import WhyChooseUs from "./components/WhyChooseUs";
 import Contact from "./components/Contact";
 import ServiceDetailPage from "./components/ServiceDetailPage";
-import type { ServiceData } from "./components/ServiceDetailPage";
 
 function App() {
-  const [activeService, setActiveService] = useState<ServiceData | null>(null);
-
   return (
     <div className="app">
-      <Header onServiceSelect={setActiveService} />
-      <main>
-        <Home />
-        <About />
-        <Services />
-        <WhyChooseUs />
-        <Contact />
-      </main>
-      {activeService && (
-        <ServiceDetailPage
-          service={activeService}
-          onClose={() => setActiveService(null)}
+      <Header />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <main>
+              <Home />
+              <About />
+              <Services />
+              <WhyChooseUs />
+              <Contact />
+            </main>
+          }
         />
-      )}
+        <Route path="/services/:serviceId" element={<ServiceDetailPage />} />
+      </Routes>
     </div>
   );
 }
