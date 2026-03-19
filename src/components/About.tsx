@@ -2,19 +2,19 @@ import './About.css';
 
 const pillars = [
   {
-    icon: '🏢',
-    title: 'Enterprise & Manufacturer Partners',
-    desc: 'Delivering structured, compliant solutions that support efficient market entry and regulatory assurance.',
+    icon: '📋',
+    title: 'Certification & Licensing Expertise',
+    desc: 'Professional support for BIS / ISI Certification, FSSAI License, ISO Certification, Trademark, Patent Services, and Export-Import (IEC) registration.',
   },
   {
-    icon: '📈',
-    title: 'Investor-Ready Growth',
-    desc: 'Commercially viable strategies aligned with long-term business growth and scalable operations.',
+    icon: '🔬',
+    title: 'Product Development & Compliance',
+    desc: 'Helping businesses with new product development in food, packaging, and chemicals, along with BIS-compliant logo and label design.',
   },
   {
     icon: '🤝',
-    title: 'End-to-End Support',
-    desc: 'Your personal Business Consultant across every stage of your business journey.',
+    title: 'End-to-End Business Support',
+    desc: 'Complete guidance from product idea, certification, licensing, and regulatory approvals to successful market launch.',
   },
 ];
 
@@ -24,14 +24,12 @@ const About = () => {
       <div className="about__inner">
         <div className="about__text">
           <span className="section-tag">Who We Are</span>
-          <h2 className="section-title">Your Personal Business Consultant</h2>
+          <h2 className="section-title">Your Trusted Certification & Compliance Consultant</h2>
           <p className="section-subtitle">
-            We are Team Consellum, providing end to end support for all of your business problems.
+            We are Consellum Advisory Services, providing end-to-end consultancy for business certifications, regulatory approvals, and licensing services across India.
           </p>
           <p className="about__body">
-            We partner with enterprises, manufacturers, and investors to deliver structured, compliant,
-            and commercially viable solutions that support efficient market entry, regulatory assurance,
-            and long-term business growth.
+            We work with manufacturers, startups, and growing businesses to deliver structured, compliant, and practical solutions that help products enter the market smoothly and grow sustainably.
           </p>
 
           <div className="about__pillars">
