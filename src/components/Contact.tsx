@@ -64,7 +64,7 @@ const Contact = () => {
               <div>
                 <span className="contact__detail-label">Email</span>
                 <span className="contact__detail-value">
-                  hello@consellum.com
+                  service.consellum@gmail.com
                 </span>
               </div>
             </div>
