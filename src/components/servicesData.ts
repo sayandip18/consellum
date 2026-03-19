@@ -4,6 +4,8 @@ export const SERVICES_LIST: ServiceData[] = [
   {
     id: "bis-isi",
     title: "BIS / ISI Certification Consultancy Services",
+    shortDesc:
+      "Consultancy for BIS licensing, ISI mark certification, testing coordination, and compliance management.",
     description:
       "Consellum Advisory Services offers comprehensive consultancy for BIS / ISI certification processes, ensuring your products meet Indian standards. We provide expert support for new and renewal BIS / ISI license applications, product testing, portal management, and compliance. Our end-to-end services simplify regulatory complexities, helping manufacturers achieve certification efficiently and maintain long-term compliance with BIS requirements.",
     subtopics: [
@@ -52,6 +54,8 @@ export const SERVICES_LIST: ServiceData[] = [
   {
     id: "fssai",
     title: "FSSAI Consultancy Services",
+    shortDesc:
+      "Assistance with FSSAI registration, state and central licenses, and food compliance requirements.",
     description:
       "Consellum Advisory Services provides professional consultancy for FSSAI license registration and food regulatory compliance in India. We assist food manufacturers, processors, traders, and startups in obtaining FSSAI registration, state license, and central license as per regulatory requirements. Our end-to-end support covers documentation, application filing, compliance guidance, and approval coordination, helping businesses meet food safety standards and enter the market smoothly.",
     subtopics: [
@@ -96,6 +100,8 @@ export const SERVICES_LIST: ServiceData[] = [
   {
     id: "trademark",
     title: "Trademark Services",
+    shortDesc:
+      "Professional support for trademark registration and brand protection services.",
     description:
       "Consellum Advisory Services offers expert support for trademark registration and brand protection in India. We help businesses secure legal ownership of their brand name, logo, and identity, ensuring protection against unauthorized use. Our services include trademark search, application filing, documentation, and registration process management, enabling businesses to build strong and legally protected brands.",
     subtopics: [
@@ -124,6 +130,8 @@ export const SERVICES_LIST: ServiceData[] = [
   {
     id: "patent",
     title: "Patent Services",
+    shortDesc:
+      "Professional support for patent application filing and intellectual property protection.",
     description:
       "Consellum Advisory Services assists innovators and businesses with patent application and intellectual property protection. We provide guidance throughout the patent filing process to help secure legal rights for new inventions and technologies. Our consultancy includes patent documentation, application filing, and regulatory coordination, ensuring your innovation is protected under intellectual property laws.",
     subtopics: [
@@ -156,6 +164,8 @@ export const SERVICES_LIST: ServiceData[] = [
   {
     id: "iso",
     title: "ISO Certification",
+    shortDesc:
+      "Guidance for ISO 9001, ISO 22000, ISO 14001, and other ISO standards.",
     description:
       "Consellum Advisory Services provides consultancy for ISO certification and quality management system implementation. We help businesses achieve internationally recognized standards such as ISO 9001, ISO 22000, ISO 14001, and other ISO certifications. Our services include gap analysis, documentation, process guidance, and certification support, helping organizations improve operational efficiency and credibility.",
     subtopics: [
@@ -188,6 +198,8 @@ export const SERVICES_LIST: ServiceData[] = [
   {
     id: "logo-label",
     title: "Product Logo / Label Design",
+    shortDesc:
+      "Design of BIS-compliant labels and e-commerce ready packaging.",
     description:
       "Creative and compliant product logo and label design services that meet regulatory requirements while effectively communicating your brand story.",
     subtopics: [
@@ -216,6 +228,8 @@ export const SERVICES_LIST: ServiceData[] = [
   {
     id: "export-import",
     title: "Export-Import License",
+    shortDesc:
+      "Support for IEC registration and export-import licensing.",
     description:
       "Consellum Advisory Services offers complete assistance for Import Export Code (IEC) registration, enabling businesses to participate in international trade. We support companies with documentation, application filing, and regulatory compliance, ensuring a smooth process for starting export and import operations.",
     subtopics: [
@@ -248,6 +262,8 @@ export const SERVICES_LIST: ServiceData[] = [
   {
     id: "npd",
     title: "New Product Development – Food / Packaging / Chemicals",
+    shortDesc:
+      "Technical consultancy for food, packaging, and chemical product innovations.",
     description:
       "Consellum Advisory Services supports businesses with new product development for food, packaging, and chemical products. Our consultancy includes formulation guidance, regulatory compliance support, and product readiness for certification and market launch.",
     subtopics: [
@@ -280,6 +296,8 @@ export const SERVICES_LIST: ServiceData[] = [
   {
     id: "other",
     title: "Other Regulatory Certifications",
+    shortDesc:
+      "Additional support for MSME registration and other government approvals.",
     description:
       "Consellum Advisory Services also provides support for various regulatory certifications and government approvals required for businesses in India. Our services help companies navigate complex regulatory frameworks and obtain the necessary certifications for compliant business operations.",
     subtopics: [

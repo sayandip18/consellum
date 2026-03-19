@@ -11,6 +11,7 @@ export interface ServiceSubtopic {
 export interface ServiceData {
   id: string;
   title: string;
+  shortDesc: string;
   description: string;
   subtopics: ServiceSubtopic[];
 }
